@@ -53,6 +53,8 @@ namespace IBroker
                    // MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     DashBoard d1 = new DashBoard();
                     d1.Show();
+                    Login l1 = new Login();
+                    l1.Hide();
                 }
                 else if(Success=="Inserted")
                 {

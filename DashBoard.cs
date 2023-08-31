@@ -120,5 +120,35 @@ namespace IBroker
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSearchBar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tblTask_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            try {
+                Login l1 = new Login();
+                l1.Show();
+                DashBoard d1 = new DashBoard();
+                d1.Hide();
+            }
+            catch(Exception ex)
+            {
+                Console.Write(ex.ToString());
+            }
+           
+        }
     }
 }
