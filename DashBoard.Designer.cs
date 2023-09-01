@@ -28,8 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("DashBoard");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("User  Registration");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Party Registration");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Manage Registration", new System.Windows.Forms.TreeNode[] {
+            treeNode2,
+            treeNode3});
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Manage E-Forms");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Manage E-Forms", new System.Windows.Forms.TreeNode[] {
+            treeNode5});
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Manage Case");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Manage Case", new System.Windows.Forms.TreeNode[] {
+            treeNode7});
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Manage Business Rules");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Manage Partner");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Manage Product");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Manage Party");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Manage Party", new System.Windows.Forms.TreeNode[] {
+            treeNode12});
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("User Details");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Role List");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Role Permission");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Role Assign");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Role Details", new System.Windows.Forms.TreeNode[] {
+            treeNode15,
+            treeNode16,
+            treeNode17});
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Office Details");
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Manage User", new System.Windows.Forms.TreeNode[] {
+            treeNode14,
+            treeNode18,
+            treeNode19});
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
             this.txtSearchBar = new System.Windows.Forms.TextBox();
@@ -41,6 +74,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
@@ -54,12 +88,12 @@
             this.button11 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.grdCases = new System.Windows.Forms.DataGridView();
+            this.User = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CaseDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewButtonColumn();
             this.LastUpdate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tracking_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Update = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrackingID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.label19 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -94,6 +128,7 @@
             this.lblUnassigned = new System.Windows.Forms.Label();
             this.pnlTask = new System.Windows.Forms.Panel();
             this.lblTask = new System.Windows.Forms.Label();
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -175,7 +210,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 76);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(311, 974);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(311, 918);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // panel2
@@ -223,10 +258,103 @@
             // 
             // treeView1
             // 
+            this.treeView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.treeView1.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.treeView1.ImageIndex = 0;
+            this.treeView1.ImageList = this.imageList1;
             this.treeView1.Location = new System.Drawing.Point(3, 103);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(308, 871);
+            treeNode1.ImageKey = "Home.png";
+            treeNode1.Name = "DashBoard";
+            treeNode1.SelectedImageKey = "(default)";
+            treeNode1.Text = "DashBoard";
+            treeNode2.ImageKey = "user1.png";
+            treeNode2.Name = "User Registration";
+            treeNode2.Text = "User  Registration";
+            treeNode3.ImageKey = "user1.png";
+            treeNode3.Name = "Party Registration";
+            treeNode3.Text = "Party Registration";
+            treeNode4.ImageKey = "user1.png";
+            treeNode4.Name = "Manage Registration";
+            treeNode4.Text = "Manage Registration";
+            treeNode5.ImageKey = "MPartner.png";
+            treeNode5.Name = "Manage E-Forms";
+            treeNode5.Text = "Manage E-Forms";
+            treeNode6.ImageKey = "MPartner.png";
+            treeNode6.Name = "Manage E-Forms";
+            treeNode6.Text = "Manage E-Forms";
+            treeNode7.ImageKey = "MPart2.png";
+            treeNode7.Name = "Manage Case";
+            treeNode7.Text = "Manage Case";
+            treeNode8.ImageKey = "MPart2.png";
+            treeNode8.Name = "Manage Case";
+            treeNode8.Text = "Manage Case";
+            treeNode9.ImageKey = "BRule.png";
+            treeNode9.Name = "Manage Business Rules";
+            treeNode9.Text = "Manage Business Rules";
+            treeNode10.ImageKey = "Forms.png";
+            treeNode10.Name = "Manage Partner";
+            treeNode10.Text = "Manage Partner";
+            treeNode11.ImageKey = "Forms2.png";
+            treeNode11.Name = "Manage Product";
+            treeNode11.Text = "Manage Product";
+            treeNode12.ImageKey = "User2.png";
+            treeNode12.Name = "Manage Party";
+            treeNode12.Text = "Manage Party";
+            treeNode13.ImageKey = "User2.png";
+            treeNode13.Name = "Manage Party";
+            treeNode13.Text = "Manage Party";
+            treeNode14.ImageKey = "user1.png";
+            treeNode14.Name = "User Details";
+            treeNode14.Text = "User Details";
+            treeNode15.ImageKey = "User2.png";
+            treeNode15.Name = "Role List";
+            treeNode15.Text = "Role List";
+            treeNode16.ImageKey = "User2.png";
+            treeNode16.Name = "Role Permission";
+            treeNode16.Text = "Role Permission";
+            treeNode17.ImageKey = "User2.png";
+            treeNode17.Name = "Role Assign";
+            treeNode17.Text = "Role Assign";
+            treeNode18.ImageKey = "user1.png";
+            treeNode18.Name = "Role Details";
+            treeNode18.Text = "Role Details";
+            treeNode19.ImageKey = "user1.png";
+            treeNode19.Name = "Office Details";
+            treeNode19.Text = "Office Details";
+            treeNode20.ImageKey = "user1.png";
+            treeNode20.Name = "Manage User";
+            treeNode20.Text = "Manage User";
+            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode4,
+            treeNode6,
+            treeNode8,
+            treeNode9,
+            treeNode10,
+            treeNode11,
+            treeNode13,
+            treeNode20});
+            this.treeView1.SelectedImageIndex = 0;
+            this.treeView1.ShowLines = false;
+            this.treeView1.ShowPlusMinus = false;
+            this.treeView1.Size = new System.Drawing.Size(308, 840);
             this.treeView1.TabIndex = 2;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "BRule.png");
+            this.imageList1.Images.SetKeyName(1, "Forms.png");
+            this.imageList1.Images.SetKeyName(2, "Forms2.png");
+            this.imageList1.Images.SetKeyName(3, "Home.png");
+            this.imageList1.Images.SetKeyName(4, "logout.png");
+            this.imageList1.Images.SetKeyName(5, "Manage.png");
+            this.imageList1.Images.SetKeyName(6, "MPart2.png");
+            this.imageList1.Images.SetKeyName(7, "MPartner.png");
+            this.imageList1.Images.SetKeyName(8, "user1.png");
+            this.imageList1.Images.SetKeyName(9, "User2.png");
             // 
             // panel7
             // 
@@ -244,7 +372,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel7.Location = new System.Drawing.Point(312, 76);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1512, 974);
+            this.panel7.Size = new System.Drawing.Size(1512, 918);
             this.panel7.TabIndex = 5;
             // 
             // panel15
@@ -309,7 +437,7 @@
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(1292, 615);
+            this.button14.Location = new System.Drawing.Point(1291, 615);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(55, 34);
             this.button14.TabIndex = 11;
@@ -336,12 +464,14 @@
             // 
             // button11
             // 
+            this.button11.BackColor = System.Drawing.SystemColors.GrayText;
+            this.button11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button11.Location = new System.Drawing.Point(1186, 615);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(57, 34);
             this.button11.TabIndex = 8;
             this.button11.Text = " 1";
-            this.button11.UseVisualStyleBackColor = true;
+            this.button11.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -356,6 +486,8 @@
             // 
             this.grdCases.AllowUserToAddRows = false;
             this.grdCases.AllowUserToDeleteRows = false;
+            this.grdCases.AllowUserToOrderColumns = true;
+            this.grdCases.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.grdCases.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.grdCases.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.grdCases.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -370,69 +502,78 @@
             this.grdCases.ColumnHeadersHeight = 50;
             this.grdCases.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.grdCases.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.User,
             this.CaseDescription,
             this.Status,
             this.LastUpdate,
-            this.Tracking_ID,
-            this.Edit,
-            this.Update});
+            this.TrackingID,
+            this.Edit});
             this.grdCases.Cursor = System.Windows.Forms.Cursors.Hand;
             this.grdCases.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.grdCases.EnableHeadersVisualStyles = false;
             this.grdCases.GridColor = System.Drawing.SystemColors.Control;
-            this.grdCases.Location = new System.Drawing.Point(28, 88);
+            this.grdCases.Location = new System.Drawing.Point(28, 102);
             this.grdCases.Name = "grdCases";
             this.grdCases.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.grdCases.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.grdCases.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.grdCases.RowHeadersVisible = false;
             this.grdCases.RowHeadersWidth = 100;
             this.grdCases.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grdCases.RowTemplate.Height = 28;
             this.grdCases.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.grdCases.Size = new System.Drawing.Size(1390, 515);
+            this.grdCases.Size = new System.Drawing.Size(1390, 501);
             this.grdCases.TabIndex = 6;
+            // 
+            // User
+            // 
+            this.User.HeaderText = "User";
+            this.User.MinimumWidth = 8;
+            this.User.Name = "User";
+            this.User.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.User.Width = 170;
             // 
             // CaseDescription
             // 
-            this.CaseDescription.HeaderText = "User";
+            this.CaseDescription.HeaderText = "Case Description";
             this.CaseDescription.MinimumWidth = 8;
             this.CaseDescription.Name = "CaseDescription";
-            this.CaseDescription.Width = 170;
+            this.CaseDescription.Width = 280;
             // 
             // Status
             // 
-            this.Status.HeaderText = "Case Description";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gray;
+            this.Status.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Status.HeaderText = "Status";
             this.Status.MinimumWidth = 8;
             this.Status.Name = "Status";
-            this.Status.Width = 250;
+            this.Status.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Status.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Status.Width = 80;
             // 
             // LastUpdate
             // 
-            this.LastUpdate.HeaderText = "Status";
+            this.LastUpdate.HeaderText = "Last Update";
             this.LastUpdate.MinimumWidth = 8;
             this.LastUpdate.Name = "LastUpdate";
-            this.LastUpdate.Width = 150;
+            this.LastUpdate.Width = 200;
             // 
-            // Tracking_ID
+            // TrackingID
             // 
-            this.Tracking_ID.HeaderText = "Last Update";
-            this.Tracking_ID.MinimumWidth = 8;
-            this.Tracking_ID.Name = "Tracking_ID";
-            this.Tracking_ID.Width = 170;
+            this.TrackingID.HeaderText = "Tracking ID";
+            this.TrackingID.MinimumWidth = 8;
+            this.TrackingID.Name = "TrackingID";
+            this.TrackingID.Width = 165;
             // 
             // Edit
             // 
-            this.Edit.HeaderText = "Tracking ID";
-            this.Edit.MinimumWidth = 8;
+            this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Edit.HeaderText = "Edit";
+            this.Edit.Image = ((System.Drawing.Image)(resources.GetObject("Edit.Image")));
+            this.Edit.MinimumWidth = 20;
             this.Edit.Name = "Edit";
-            this.Edit.Width = 150;
-            // 
-            // Update
-            // 
-            this.Update.HeaderText = "Edit";
-            this.Update.MinimumWidth = 8;
-            this.Update.Name = "Update";
-            this.Update.Width = 80;
+            this.Edit.Width = 41;
             // 
             // label19
             // 
@@ -539,7 +680,7 @@
             this.tblCases.ColumnCount = 3;
             this.tblCases.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.9638F));
             this.tblCases.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.0362F));
-            this.tblCases.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 147F));
+            this.tblCases.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tblCases.Controls.Add(this.panel11, 2, 0);
             this.tblCases.Controls.Add(this.panel10, 1, 0);
             this.tblCases.Location = new System.Drawing.Point(3, 114);
@@ -554,7 +695,7 @@
             this.panel11.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel11.Controls.Add(this.label8);
             this.panel11.Controls.Add(this.label9);
-            this.panel11.Location = new System.Drawing.Point(325, 3);
+            this.panel11.Location = new System.Drawing.Point(322, 3);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(122, 91);
             this.panel11.TabIndex = 7;
@@ -584,7 +725,7 @@
             this.panel10.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel10.Controls.Add(this.label6);
             this.panel10.Controls.Add(this.label7);
-            this.panel10.Location = new System.Drawing.Point(157, 3);
+            this.panel10.Location = new System.Drawing.Point(156, 3);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(157, 91);
             this.panel10.TabIndex = 6;
@@ -627,7 +768,7 @@
             this.tblTask.ColumnCount = 3;
             this.tblTask.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.86997F));
             this.tblTask.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.13003F));
-            this.tblTask.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
+            this.tblTask.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 144F));
             this.tblTask.Controls.Add(this.panel14, 2, 0);
             this.tblTask.Controls.Add(this.panel13, 1, 0);
             this.tblTask.Controls.Add(this.panel12, 0, 0);
@@ -643,7 +784,7 @@
             this.panel14.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel14.Controls.Add(this.label14);
             this.panel14.Controls.Add(this.label15);
-            this.panel14.Location = new System.Drawing.Point(336, 3);
+            this.panel14.Location = new System.Drawing.Point(333, 3);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(136, 91);
             this.panel14.TabIndex = 7;
@@ -673,7 +814,7 @@
             this.panel13.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel13.Controls.Add(this.label12);
             this.panel13.Controls.Add(this.label13);
-            this.panel13.Location = new System.Drawing.Point(182, 3);
+            this.panel13.Location = new System.Drawing.Point(181, 3);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(113, 91);
             this.panel13.TabIndex = 7;
@@ -788,19 +929,27 @@
             this.lblTask.TabIndex = 0;
             this.lblTask.Text = "My Task";
             // 
+            // imageList2
+            // 
+            this.imageList2.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1824, 1050);
+            this.ClientSize = new System.Drawing.Size(1824, 994);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Name = "DashBoard";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoard";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -863,12 +1012,6 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView grdCases;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CaseDescription;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LastUpdate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tracking_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Edit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Update;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label18;
@@ -903,6 +1046,14 @@
         private System.Windows.Forms.Label lblUnassigned;
         private System.Windows.Forms.Panel pnlTask;
         private System.Windows.Forms.Label lblTask;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ImageList imageList2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn User;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CaseDescription;
+        private System.Windows.Forms.DataGridViewButtonColumn Status;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LastUpdate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TrackingID;
+        private System.Windows.Forms.DataGridViewImageColumn Edit;
         private System.Windows.Forms.TreeView treeView1;
     }
 }

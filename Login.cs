@@ -55,12 +55,7 @@ namespace IBroker
                 {
                     label2.Text = "User Not Found...!!";
                 }
-                //else if(Success=="Inserted")
-                //{
-
-                //    label2.Text = "Invalid username or password.";
-                // //   MessageBox.Show("Invalid username or password.", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //}
+                
             }
             else
             {
@@ -91,7 +86,7 @@ namespace IBroker
             }
         }
         private void txtUserName_Leave(object sender, EventArgs e)
-        {
+       {
             try
             {
             txtUserName.BorderStyle = BorderStyle.None;
@@ -140,6 +135,23 @@ namespace IBroker
                 Console.WriteLine(ex.Message);
             }
         }
-      
+
+        private void btnShowPass_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '*')
+            {
+                btnHidePass.BringToFront();
+                txtPassword.PasswordChar = '\0';
+            }
+        }
+
+        private void btnHidePass_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '\0')
+            {
+                btnShowPass.BringToFront();
+                txtPassword.PasswordChar = '*';
+            }
+        }
     }
 }

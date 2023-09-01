@@ -15,11 +15,10 @@ namespace IBroker
 {
     public partial class DashBoard : Form
     {
-        bool RegCollapsed;
         public DashBoard()
         {
             InitializeComponent();
-            BindTreeView();
+          //  BindTreeView();
             BindGridView();
         }
         public void BindTreeView()
@@ -75,14 +74,15 @@ namespace IBroker
             {
                 Login l1 = new Login();
                 l1.Show();
-                DashBoard d1 = new DashBoard();
-                d1.Hide();
+              //  DashBoard d1 = new DashBoard();
+               // d1.Hide();
             }
             catch (Exception ex)
             {
                 Console.Write(ex.ToString());
             }
-        } 
+        }
+
 
     }
 }
