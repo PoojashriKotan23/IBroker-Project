@@ -24,14 +24,5 @@ namespace IBroker.Models
         public string Tracking_ID { get; set; }
      
 
-        //public  void DashboardCase(string user,string case_Desc,string status,string last_Update,string TrackID)
-        //{
-        //    User = user;
-        //    Case_Desc = case_Desc;
-        //    Status = status;
-        //    Last_Update = last_Update;
-        //    Tracking_ID = TrackID;
-        //}
-
     }
 }

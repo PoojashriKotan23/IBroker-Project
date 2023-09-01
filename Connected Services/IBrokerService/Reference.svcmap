@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="5fa858ac-a21c-40e1-9d98-c3ef64a8166c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="6f014d99-3350-420f-8301-6db8588594ee" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/IBrokerService/IBrokerService/" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="04fcca65-15f0-4094-9f3f-42337300b8be" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IBrokerService/IBrokerService/?xsd=xsd1" />
-    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="2dbed0cd-da0f-484a-a1a0-2d658d34f221" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IBrokerService/IBrokerService/?xsd=xsd0" />
-    <MetadataFile FileName="IBrokerService.wsdl" MetadataType="Wsdl" ID="749bef1c-4465-4485-bde6-6f288f333ac8" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IBrokerService/IBrokerService/?wsdl" />
-    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="b5260b06-1631-4049-b74b-bed3c2f1a780" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IBrokerService/IBrokerService/?xsd=xsd2" />
-    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="68961763-68c9-4596-917d-a040dd9f8a3f" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IBrokerService/IBrokerService/?disco" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="0688e241-634d-4c20-a9ac-4f1355801812" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IBrokerService/IBrokerService/?xsd=xsd1" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="a8190cfa-ab67-449f-8d57-a491224a2d64" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IBrokerService/IBrokerService/?xsd=xsd0" />
+    <MetadataFile FileName="IBrokerService.wsdl" MetadataType="Wsdl" ID="671b1035-d0e0-4f74-9f83-1ebc1ddb69b3" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IBrokerService/IBrokerService/?wsdl" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="515434f8-d9f5-4fbd-931a-dc93af633856" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IBrokerService/IBrokerService/?xsd=xsd2" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="1129a624-d2e3-4936-834c-3932b2a1855c" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/IBrokerService/IBrokerService/?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

@@ -8,10 +8,10 @@ namespace IBrokerService.DBModel
 {
     public class LoginDetails
     {
-        public string UserID { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
-        public string Status { get; set; }
-        public string Param { get; set; }
+        //   public string Status { get; set; }
+        // public string Param { get; set; }
+        //   public string UserID { get; set; }
     }
 }
