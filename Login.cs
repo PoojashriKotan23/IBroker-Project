@@ -29,8 +29,8 @@ namespace IBroker
             LoginDetails login = new LoginDetails();
             login.UserName = txtUserName.Text;
             login.Password= txtPassword.Text;
-
-            if (string.IsNullOrEmpty(txtUserName.Text) || string.IsNullOrEmpty(txtPassword.Text))
+             //string.IsNullOrEmpty(txtUserName.Text) || string.IsNullOrEmpty(txtPassword.Text)
+            if (txtUserName.Text== "Enter User ID" || txtPassword.Text== "Enter Password")
             {
                 label2.Text = "Please enter both username and password.";
               //  MessageBox.Show("Please enter both username and password.", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
